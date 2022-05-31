@@ -20,7 +20,6 @@ namespace TicTacToe
 
         public int players = 2; //even = O move; odd = X turn
         public int moves = 0; //counting moves;
-        //counting wins or draws of players 
 
         private void buttonClick(object sender, EventArgs e)
         {
@@ -37,15 +36,10 @@ namespace TicTacToe
                 players++;
                 moves++;
             }
-            if (CheckDraw() == true)
-            {
-                MessageBox.Show("It's a Draw!");
-                NewGame();
-            }
 
-            if(CheckWinner()==true)
+            if (CheckWinner() == true)
             {
-                if (button.Text =="X")
+                if (button.Text == "X")
                 {
                     MessageBox.Show("X Wins!");
                     NewGame();
@@ -57,33 +51,26 @@ namespace TicTacToe
                 }
             }
 
+            if (CheckDraw() == true)
+            {
+                MessageBox.Show("It's a Draw!");
+                NewGame();
+            }
         }
-
         void NewGame()
         {
             players = 2;
             moves = 0;
             A1.Text = A2.Text = A3.Text = B1.Text = B2.Text = B3.Text = C1.Text = C2.Text = C3.Text = "";
         }
-
         private void NGbuttonClick(object sender, EventArgs e)
         {
             NewGame();
         }
-
         private void EButtonClick(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        bool CheckDraw()
-        {
-            if (moves == 9)
-                return true;
-            else
-                return false;
-        }
-
         bool CheckWinner()
         {
             //horizontal checks
@@ -110,7 +97,12 @@ namespace TicTacToe
             else
                 return false;
         }
-
+        bool CheckDraw()
+        {
+            if (moves == 9)
+                return true;
+            else
+                return false;
         }
     }
-
+}
