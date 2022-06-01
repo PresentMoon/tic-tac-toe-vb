@@ -18,7 +18,7 @@ namespace TicTacToe
             InitializeComponent();
         }
 
-        public int players = 2; //even = O move; odd = X turn
+        public int players = 2; //even = O move; odd = X 
         public int moves = 0; //counting moves;
 
         private void buttonClick(object sender, EventArgs e)
