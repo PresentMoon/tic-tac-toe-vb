@@ -40,7 +40,7 @@ namespace TicTacToe
             this.B3 = new System.Windows.Forms.Button();
             this.C3 = new System.Windows.Forms.Button();
             this.NewGameButton = new System.Windows.Forms.Button();
-            this.Exit = new System.Windows.Forms.Button();
+            this.ExitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // A1
@@ -143,15 +143,15 @@ namespace TicTacToe
             this.NewGameButton.UseVisualStyleBackColor = true;
             this.NewGameButton.Click += new System.EventHandler(this.NGbuttonClick);
             // 
-            // Exit
+            // ExitButton
             // 
-            this.Exit.Location = new System.Drawing.Point(225, 324);
-            this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(75, 23);
-            this.Exit.TabIndex = 11;
-            this.Exit.Text = "Exit";
-            this.Exit.UseVisualStyleBackColor = true;
-            this.Exit.Click += new System.EventHandler(this.EButtonClick);
+            this.ExitButton.Location = new System.Drawing.Point(225, 324);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(75, 23);
+            this.ExitButton.TabIndex = 11;
+            this.ExitButton.Text = "Exit";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.EButtonClick);
             // 
             // Form1
             // 
@@ -159,7 +159,7 @@ namespace TicTacToe
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(339, 365);
-            this.Controls.Add(this.Exit);
+            this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.NewGameButton);
             this.Controls.Add(this.C3);
             this.Controls.Add(this.B3);
@@ -209,7 +209,7 @@ namespace TicTacToe
         private System.Windows.Forms.Button B3;
         private System.Windows.Forms.Button C3;
         private System.Windows.Forms.Button NewGameButton;
-        private System.Windows.Forms.Button Exit;
+        private System.Windows.Forms.Button ExitButton;
     }
 }
 
