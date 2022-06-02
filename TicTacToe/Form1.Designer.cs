@@ -141,7 +141,7 @@ namespace TicTacToe
             this.NewGameButton.TabIndex = 9;
             this.NewGameButton.Text = "New Game";
             this.NewGameButton.UseVisualStyleBackColor = true;
-            this.NewGameButton.Click += new System.EventHandler(this.NGbuttonClick);
+            this.NewGameButton.Click += new System.EventHandler(this.NewGamebuttonClick);
             // 
             // ExitButton
             // 
@@ -151,7 +151,7 @@ namespace TicTacToe
             this.ExitButton.TabIndex = 11;
             this.ExitButton.Text = "Exit";
             this.ExitButton.UseVisualStyleBackColor = true;
-            this.ExitButton.Click += new System.EventHandler(this.EButtonClick);
+            this.ExitButton.Click += new System.EventHandler(this.ExitButtonClick);
             // 
             // Form1
             // 
@@ -177,17 +177,17 @@ namespace TicTacToe
 
         }
 
+        private void EButtonClick(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void NbuttonClick(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void ExitButtonClick(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
-        private void NewGamebuttonClick(object sender, EventArgs e)
         {
             throw new NotImplementedException();
         }

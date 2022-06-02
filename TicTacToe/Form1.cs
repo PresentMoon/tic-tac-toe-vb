@@ -24,17 +24,20 @@ namespace TicTacToe
         private void buttonClick(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            if (players % 2 != 0)
+            if (button.Text == "")
             {
-                button.Text = "O";
-                players++;
-                moves++;
-            }
-            else
-            {
-                button.Text = "X";
-                players++;
-                moves++;
+                if (players % 2 != 0)
+                {
+                    button.Text = "O";
+                    players++;
+                    moves++;
+                }
+                else
+                {
+                    button.Text = "X";
+                    players++;
+                    moves++;
+                }
             }
 
             if (CheckWinner() == true)
@@ -63,11 +66,11 @@ namespace TicTacToe
             moves = 0;
             A1.Text = A2.Text = A3.Text = B1.Text = B2.Text = B3.Text = C1.Text = C2.Text = C3.Text = "";
         }
-        private void NGbuttonClick(object sender, EventArgs e)
+        private void NewGamebuttonClick(object sender, EventArgs e)
         {
             NewGame();
         }
-        private void EButtonClick(object sender, EventArgs e)
+        private void ExitButtonClick(object sender, EventArgs e)
         {
             this.Close();
         }
